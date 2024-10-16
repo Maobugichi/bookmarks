@@ -1621,10 +1621,6 @@ video {
     border-bottom-width: 2px;
   }
 
-  .xl\:border-none {
-    border-style: none;
-  }
-
   .xl\:border-softRed {
     --tw-border-opacity: 1;
     border-color: hsl(0 94% 66% / var(--tw-border-opacity));

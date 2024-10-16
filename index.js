@@ -12,7 +12,6 @@ const form = document.querySelector("form")
 const input = document.querySelector("input")
 const err = document.querySelector(".err-message")
 const sign = document.querySelector(".err")
-console.log(faq)
 let prev = null
 
 
@@ -38,9 +37,7 @@ form.addEventListener("submit", (e) => {
 })
 
 change.forEach(item => {
-  
     item.addEventListener("click", () => {
-        //item.classList.remove("xl:border-none")
         item.classList.add("xl:border-b-2", "xl:border-softRed")
         if (prev) {
             prev.classList.remove("xl:border-b-2", "xl:border-softRed")
@@ -55,7 +52,6 @@ change.forEach(item => {
                  return response.json()
             }).then(data => {
                 console.log(img.src)
-                 console.log(data.features)
                  data.features.forEach(feature => {
                     if (feature.title.includes("Click") && item.innerText.includes("Simple")){
                         header.innerText = feature.title   
@@ -65,15 +61,14 @@ change.forEach(item => {
                         else if (feature.title.includes("Search") && item.innerText.includes("Search")) {
                         header.innerText = feature.title   
                         para.innerText = feature.description
-                        img.setAttribute("src","./images/illustration-features-tab-2.svg")
+                        img.setAttribute("src","/images/illustration-features-tab-2.svg")
                         
                     } else if (feature.title.includes("Shar") && item.innerText.includes("Shar")){
                         header.innerText = feature.title   
                         para.innerText = feature.description
-                        img.src = "./images/illustration-features-tab-3.svg"
+                        img.src = "/images/illustration-features-tab-3.svg"
                         
                     } 
-                    //console.log(feature.title.includes("Search"))
                  })
             }).catch(error => {
                 console.error('Error fetching or parsing data:', error);
@@ -90,7 +85,6 @@ cavet.forEach((item,index) => {
     item.addEventListener("click", () => {
       faq[index].classList.toggle('hidden');
       faq[index].classList.toggle("animate-heightAnimation");
-      //console.log(window.getComputedStyle(item).transition )
       item.style.transition = "transform 0.5s ease-in-out"
       cavet[index].style.transform = down ?  "rotate(0deg)" : "rotate(180deg)"   
        down = !down
@@ -104,7 +98,6 @@ menu.addEventListener("click", () => {
 
 close.addEventListener("click", () => {
     side.classList.add("animate-up")
-
     setTimeout(() => {
         side.classList.remove("animate-down")
         side.classList.remove("animate-up")
