@@ -66,7 +66,7 @@ change.forEach(item => {
                     } else if (feature.title.includes("Shar") && item.innerText.includes("Shar")){
                         header.innerText = feature.title   
                         para.innerText = feature.description
-                        console.log(img.src)
+                        //console.log(img.src)
                         console.log(feature.src)
                     } 
                  })
