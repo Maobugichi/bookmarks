@@ -747,10 +747,6 @@ video {
   height: 12%;
 }
 
-.h-\[150vh\] {
-  height: 150vh;
-}
-
 .h-\[180px\] {
   height: 180px;
 }
@@ -835,12 +831,12 @@ video {
   max-height: 90%;
 }
 
-.min-h-\[200px\] {
-  min-height: 200px;
+.max-h-\[1000vh\] {
+  max-height: 1000vh;
 }
 
-.min-h-\[40vh\] {
-  min-height: 40vh;
+.min-h-\[200px\] {
+  min-height: 200px;
 }
 
 .min-h-\[450vh\] {
