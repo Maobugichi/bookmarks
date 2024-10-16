@@ -61,7 +61,7 @@ change.forEach(item => {
                         else if (feature.title.includes("Search") && item.innerText.includes("Search")) {
                         header.innerText = feature.title   
                         para.innerText = feature.description
-                        img.setAttribute("src",feature.src)
+                        img.src = feature.src
                         
                     } else if (feature.title.includes("Shar") && item.innerText.includes("Shar")){
                         header.innerText = feature.title   
