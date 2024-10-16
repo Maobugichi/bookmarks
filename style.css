@@ -747,6 +747,10 @@ video {
   height: 12%;
 }
 
+.h-\[175vh\] {
+  height: 175vh;
+}
+
 .h-\[180px\] {
   height: 180px;
 }
@@ -801,10 +805,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[170vh\] {
-  height: 170vh;
 }
 
 .max-h-\[100\%\] {
